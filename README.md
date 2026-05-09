@@ -1,63 +1,75 @@
-# Netflix-Data-Analytics-Pipeline
-An end-to-end modern data engineering project built using AWS, Snowflake, dbt, and Python to ingest, transform, and analyze Netflix dataset insights using scalable cloud-native architecture.
-📌 Project Overview
+# 🎬 Netflix Data Analytics Pipeline
 
-This project demonstrates the design and implementation of a modern analytics pipeline for Netflix content analysis.
+An end-to-end modern data engineering project using **AWS, Snowflake, dbt, and Python** to ingest, transform, and analyze Netflix datasets with a scalable cloud-native architecture.
 
-The pipeline:
+---
 
-Ingests raw Netflix datasets into cloud storage
-Loads and transforms data in Snowflake
-Uses dbt for modular SQL transformations and testing
-Builds analytics-ready data models
-Enables reporting and business insights generation
+## 📌 Overview
 
-The project follows modern data engineering best practices including:
+This project demonstrates a modern ELT pipeline that:
 
-Layered architecture
-Data modeling
-Automated transformations
-Data quality validation
-Scalable cloud infrastructure
-🏗️ Architecture
-          +----------------+
-          |  Netflix Data  |
-          +----------------+
-                   |
-                   v
-        +--------------------+
-        |     AWS S3         |
-        |   Raw Data Layer   |
-        +--------------------+
-                   |
-                   v
-        +--------------------+
-        |    Snowflake       |
-        | Raw / Staging Layer|
-        +--------------------+
-                   |
-                   v
-        +--------------------+
-        |        dbt         |
-        | Transformations    |
-        +--------------------+
-                   |
-                   v
-        +--------------------+
-        | Analytics Models   |
-        | Facts & Dimensions |
-        +--------------------+
-                   |
-                   v
-        +--------------------+
-        | BI / SQL Analysis  |
-        +--------------------+
-⚙️ Tech Stack
-Category	Technologies
-Programming	Python, SQL
-Cloud	AWS S3
-Data Warehouse	Snowflake
-Transformation	dbt
-Version Control	Git & GitHub
-Data Modeling	Star Schema
-Analytics	Snowflake SQL
+- Ingests raw Netflix datasets into AWS S3  
+- Loads and transforms data in Snowflake  
+- Uses dbt for modular SQL transformations & testing  
+- Builds analytics-ready fact and dimension models  
+- Generates business insights using SQL analytics  
+
+---
+
+## 🏗️ Architecture
+
+```text
+ Netflix Dataset
+        │
+        ▼
+   ┌──────────┐
+   │  AWS S3  │
+   │ Raw Layer│
+   └──────────┘
+        │
+        ▼
+   ┌──────────┐
+   │Snowflake │
+   │ Staging  │
+   └──────────┘
+        │
+        ▼
+   ┌──────────┐
+   │   dbt    │
+   │Transform │
+   └──────────┘
+        │
+        ▼
+   ┌──────────┐
+   │Analytics │
+   │  Models  │
+   └──────────┘
+        │
+        ▼
+   BI / SQL Insights
+```
+
+---
+
+## ⚙️ Tech Stack
+
+| Category | Technologies |
+|----------|--------------|
+| Language | Python, SQL |
+| Cloud | AWS S3 |
+| Warehouse | Snowflake |
+| Transformation | dbt |
+| Modeling | Star Schema |
+| Analytics | Snowflake SQL |
+| Version Control | Git & GitHub |
+
+---
+
+## ✨ Features
+
+- End-to-end ELT pipeline  
+- Cloud-native architecture  
+- dbt modular transformations  
+- Data quality validation & testing  
+- Analytics-ready data models  
+- Optimized SQL transformations  
