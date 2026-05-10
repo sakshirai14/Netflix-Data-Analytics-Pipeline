@@ -166,9 +166,9 @@ The pipeline enables insights such as:
 ## 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/your-username/netflix-data-engineering-project.git
+git clone https://github.com/your-username/Netflix-Data-Analytics-Pipeline.git
 
-cd netflix-data-engineering-project
+cd Netflix-Data-Analytics-Pipeline
 ```
 
 ---
